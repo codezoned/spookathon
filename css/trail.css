@@ -1,0 +1,35 @@
+@font-face{
+	font-family: terminal;
+	src: url(../fonts/Terminal.ttf);
+}
+
+
+body{
+  background-image: url('../img/8bitskull.jpg');
+  background-origin: inherit;
+  background-position: 10% 20%;
+  background-repeat: no-repeat;
+}
+.title{
+  positon:relative;
+  text-decoration: none;
+  background-color: black;
+  color:rgb(152, 210, 123);
+  font-size: 1.5em;
+  font-family: monospace;
+}
+
+.cursor{
+  border:5px solid rgb(152, 210, 123);
+  border-top: 2px;
+  border-bottom: 2px;
+  animation-name: blink;
+  animation-duration: 0.4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink{
+  from{ border-color: rgba(152, 210, 123,1);}
+  to{ border-color: rgba(152, 210, 123,0); }
+}
